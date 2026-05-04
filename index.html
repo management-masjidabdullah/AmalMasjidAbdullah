@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Amal Masjid Abdullah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1f6f3d, #2e8b57);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      color: #1f6f3d;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .qris-box {
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+
+    .qris-box:hover {
+      transform: scale(1.03);
+    }
+
+    .qris-img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .desc {
+      font-size: 13px;
+      color: #777;
+      margin-top: 15px;
+      line-height: 1.5;
+    }
+
+    .bank {
+      margin-top: 20px;
+      background: #1f6f3d;
+      color: white;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 14px;
+      animation: slideUp 1.2s ease;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Amal Masjid Abdullah 🙏</h1>
+    <p class="subtitle">
+      Infaq & Sedekah untuk keberkahan bersama
+    </p>
+
+    <div class="qris-box">
+      <img src="qris.png" alt="QRIS Masjid Abdullah" class="qris-img">
+    </div>
+
+    <p class="desc">
+      Scan QRIS di atas untuk berdonasi melalui e-wallet atau mobile banking.  
+      Setiap amal yang Anda berikan sangat berarti untuk kegiatan Masjid Abdullah.
+    </p>
+
+    <div class="bank">
+      Transfer Bank (BCA)<br>
+      <strong>2390 545 498</strong><br>
+      a.n Masjid Abdullah
+    </div>
+
+    <div class="footer">
+      Terima kasih atas kebaikan Anda 🤍
+    </div>
+
+  </div>
+
+</body>
+</html>
