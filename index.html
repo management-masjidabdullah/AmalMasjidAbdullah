@@ -19,7 +19,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #333;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* LOGO WATERMARK */
+    body::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: url('logo.png') no-repeat center;
+      background-size: contain;
+      opacity: 0.06;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: floatLogo 8s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -53%) scale(1.05); }
+      100% { transform: translate(-50%, -50%) scale(1); }
     }
 
     .container {
@@ -31,6 +53,8 @@
       text-align: center;
       box-shadow: 0 15px 40px rgba(0,0,0,0.2);
       animation: fadeIn 1s ease;
+      position: relative;
+      z-index: 2;
     }
 
     h1 {
@@ -86,25 +110,13 @@
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
   </style>
@@ -113,7 +125,7 @@
 <body>
 
   <div class="container">
-
+    
     <h1>Amal Masjid Abdullah 🙏</h1>
     <p class="subtitle">
       Infaq & Sedekah untuk keberkahan bersama
